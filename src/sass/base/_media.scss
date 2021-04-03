@@ -1,0 +1,106 @@
+@media (max-width: 1199.98px) {
+    .container {
+        width: 850px;
+    };
+};
+
+@media (max-width: 991.98px) {
+    .container {
+        width: 710px;
+    };
+    .promo {
+        &__wrapper {
+            margin-top: 60px;
+        };
+        &__header {
+            font-size: 38px;
+        };
+        &__subheader {
+            font-size: 20px;
+        };
+        &__icons {
+            margin-top: 25px;
+        };
+    };
+    .advantages {
+        &__icon {
+            width: 205px;
+        };
+    };
+};
+
+@media (max-width: 767.98px) {
+    .container {
+        width: 540px;
+    };
+    .xs-hidden {
+        display: none;
+    };
+    .promo {
+        &__wrapper {
+            align-items: center;
+        };
+    };
+    .advantages {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        };
+        &__icon {
+            width: 390px;
+        };
+        &__text {
+            margin-bottom: 25px;
+        };
+    };
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        width: 320px;
+    }
+    .promo {
+        header {
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 10px;
+            .header__contacts {
+                align-items: center;
+            };
+            a {
+                margin-bottom: 15px;
+            };
+            button {
+                width: 200px;
+                height: 50px;
+            };
+        };
+        &__header {
+            text-align: center;
+            font-size: 24px;
+        };
+        &__subheader {
+            text-align: center;
+            font-size: 16px;
+        };
+        &__icons {
+            width: 300px;
+        };
+        .button_main {
+            margin-top: 50px;
+            width: 280px;
+        };
+        &__link {
+            margin-top: 20px;
+        };
+    };
+    .advantages {
+        padding-top: 60px;
+        &__header {
+            font-size: 24px;
+        };
+        &__icon {
+            width: 310px;
+        };
+    };
+};
