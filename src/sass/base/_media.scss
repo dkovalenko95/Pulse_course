@@ -57,7 +57,7 @@
 
 @media (max-width: 575.98px) {
     .container {
-        width: 320px;
+        width: 305px;
     }
     .promo {
         header {
@@ -101,6 +101,24 @@
         };
         &__icon {
             width: 310px;
+        };
+    };
+    .consultation {
+        min-height: 615px;
+        padding: 25px 15px;
+        .title_left {
+            font-size: 22px;
+        }
+        &__descr {
+            font-size: 16px;
+        };
+        .feed-form {
+            input {
+                width: 285px;
+            }
+        };
+        .button_submit {
+            width: 285px;
         };
     };
 };

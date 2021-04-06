@@ -1,5 +1,5 @@
 .advantages {
-    height: 475px;
+    min-height: 475px;
     padding: 73px 0px 65px 0px;
     &__wrapper {
         margin-top: 60px;
@@ -28,5 +28,10 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 18px;
+        span {
+            text-decoration-line: underline;
+            color: #FF0000;
+            text-transform: uppercase;
+        }
     }    
 }
