@@ -1,8 +1,17 @@
 .carousel {
-    padding: 81px 0px;
-    &__inner {
+    padding: 81px 0px;     
+    &__slider {
         position: relative;
         width: 750px;
+        margin: 0 auto;
+        &__item {
+            display: block;
+            margin: 0 auto;
+            
+        }
+    }
+    .slick-slide img {
+        display: block;
         margin: 0 auto;
     }
     .slick-prev, .slick-next {
@@ -20,5 +29,43 @@
     .slick-next {
         right: -66px;
         left: auto;
+    }
+    button.slick-prev {
+        background: url('../../icons/left_red_arrow.png') center (center / cover) no-repeat;
+        width: 31px;
+        height: 50px;
+        font-size: 0;
+    }
+    button.slick-next {
+        background: url('../../icons/right_red_arrow.png') center (center / cover) no-repeat;
+        width: 31px;
+        height: 50px;
+        font-size: 0;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .slick-dots li {
+        list-style: none;
+        font-size: 0px;
+	    margin: 0px 10px;
+    }
+    .slick-dots button {
+        font-size: 0;
+        width: 6px;
+        height: 12px;
+        background-color: black;
+        border: none;
+        border-radius: 100%;
+    }
+    .slick-dots li.slick-active button {
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 100%;
+        width: 5px;
+        height: 14px;
     }
 }

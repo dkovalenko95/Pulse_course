@@ -28,13 +28,15 @@
         };
     };
     .carousel {
-        &__inner {
+        &__slider {
             position: relative;
             width: 600px;
             margin: 0 auto;
             .slick-slide {
                 img {
-                    width: 100%;
+                    width: 90%;
+                    display: block;
+                    margin: 0 auto;
                 }
             }
         }
@@ -66,14 +68,18 @@
         };
     };
     .carousel {
-        &__inner {
+        &__slider {
             position: relative;
-            width: 500px;
+            width: 480px;
             margin: 0 auto;
             .slick-slide {
                 img {
-                    width: 100%;
+                    width: 60%;
+                    padding: 0;
                 }
+            }
+            .slick-track {
+                height: 350px;
             }
         }
     }
@@ -146,13 +152,13 @@
         };
     };
     .carousel {
-        &__inner {
+        &__slider {
             position: relative;
             width: 380px;
             margin: 0 auto;
             .slick-slide {
                 img {
-                    width: 70%;
+                    width: 55%;
                 }
             }
         }

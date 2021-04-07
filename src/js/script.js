@@ -1,9 +1,12 @@
 $(document).ready(function(){
-    $('.carousel__inner').slick({
+    $('.carousel__slider').slick({
         speed: 1000,
+        arrows: true,
+		dots: false,
+        slidesToShow: 1,
         // adaptiveHeight: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left_red_arrow.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../icons/right_red_arrow.png"></button>',
+       /*  prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left_red_arrow.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../icons/right_red_arrow.png"></button>', */
         responsive: [
             {
             breakpoint: 768,
