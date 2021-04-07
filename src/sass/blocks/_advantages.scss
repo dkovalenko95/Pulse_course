@@ -29,9 +29,12 @@
         font-size: 14px;
         line-height: 18px;
         span {
-            text-decoration-line: underline;
-            color: #FF0000;
-            text-transform: uppercase;
+            a {
+                text-decoration: none;
+                text-decoration-line: underline;
+                color: #FF0000;
+                text-transform: uppercase;
+            }         
         }
     }    
 }

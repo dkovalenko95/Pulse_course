@@ -27,6 +27,18 @@
             width: 205px;
         };
     };
+    .carousel {
+        &__inner {
+            position: relative;
+            width: 600px;
+            margin: 0 auto;
+            .slick-slide {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 };
 
 @media (max-width: 767.98px) {
@@ -53,6 +65,18 @@
             margin-bottom: 25px;
         };
     };
+    .carousel {
+        &__inner {
+            position: relative;
+            width: 500px;
+            margin: 0 auto;
+            .slick-slide {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -121,4 +145,16 @@
             width: 285px;
         };
     };
+    .carousel {
+        &__inner {
+            position: relative;
+            width: 380px;
+            margin: 0 auto;
+            .slick-slide {
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
 };
