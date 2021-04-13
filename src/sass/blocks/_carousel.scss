@@ -4,19 +4,70 @@
         position: relative;
         width: 750px;
         margin: 0 auto;
-        &__item {
+        img {
             display: block;
             margin: 0 auto;
-            
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        &__item {
+            display: block;
+            margin: 0 auto;   
         }
     }
-    .slick-slide img {
+    &__slider .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        font-size: 0;
+        width: 31px;
+        height: 50px;
+        border: none
+    }
+    &__slider .slick-arrow.slick-prev {
+        left: -50px;
+        background: url('../icons/left_red_arrow.png') center (center / cover) no-repeat;
+    }
+    &__slider .slick-arrow.slick-next {
+        right: -50px;
+        background: url('../icons/right_red_arrow.png') center (center / cover) no-repeat;
+    }
+    &__slider .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__slider .slick-dots li {
+        list-style: none;
+    }
+    &__slider .slick-dots li.slick-active button {
+        background-color: transparent;
+        border: 1px solid $main-color;
+    }
+    &__slider .slick-dots button {
+        padding: 0;
+        margin: 0 10px;
+        border-width: 0;
+        font-size: 0px;
+        width: 12px;
+        height: 12px;
+        background-color: $main-color;
+        border-radius: 50%;
+    }
+    &__slider .slick-track .slick-dots {
+        display: none;
+    }
+
+    /* .slick-slide img {
         width: 100%;
         height: 100%;
         display: block;
         margin: 0 auto;
     }
-    .slick-prev, .slick-next {
+    .prev, .next {
         position: absolute;
         border: none;
         background-color: #fff;
@@ -24,11 +75,12 @@
         transform: translateY(-50%);
         left: -66px;
         img {
+            display: none;
             width: 31px;
             height: 50px;
         }
     }
-    .slick-next {
+    .next {
         right: -66px;
         left: auto;
     }
@@ -70,4 +122,41 @@
         width: 5px;
         height: 14px;
     }
+    .tns-nav {
+        display: none;
+    } */
+    /* .tns-nav {
+        display: none; */
 }
+    /* .tns-outer {
+        .tns-controls {
+            [data-controls='prev'] {
+                font-size: 0px;
+                background: url('../../icons/left_red_arrow.png') center (center / cover) no-repeat;
+                width: 31px;
+                height: 50px;
+                border: none;
+                position: absolute;
+                left: 50px;
+                top: 220px;
+                z-index: 10;
+            }
+            [data-controls='next'] {
+                font-size: 0px;
+                background: url('../../icons/right_red_arrow.png') center (center / cover) no-repeat;
+                width: 31px;
+                height: 50px;
+                border: none;
+                position: absolute;
+                top: 220px;
+                right: 50px;
+                z-index: 10;
+            }
+        }
+    }
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }    */
