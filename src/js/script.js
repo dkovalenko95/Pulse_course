@@ -1,3 +1,5 @@
+// Carousel - slick-slider
+
 $(document).ready(function() {
     $('.carousel__slider').slick({
         arrows: true,
@@ -15,6 +17,10 @@ $(document).ready(function() {
         }
         ]
     });
+
+
+
+    // Catalogue - tabs with product and price
 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
         $(this)
@@ -50,6 +56,27 @@ $(document).ready(function() {
     
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+
+    // Modals
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+    });
+
+    /* $('.button_mini').on('click', function() {
+        $('.overlay, #order').fadeIn('slow');
+    }); */
+
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        });
+    });
 });
 
 /* $(document).ready(function(){
