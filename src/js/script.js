@@ -19,8 +19,7 @@ $(document).ready(function() {
     });
 
 
-
-    // Catalogue - tabs with product and price
+// Catalogue - tabs with product and price
 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
         $(this)
@@ -58,7 +57,7 @@ $(document).ready(function() {
     toggleSlide('.catalog-item__back');
 
 
-    // Modals
+// Modals
 
     $('[data-modal=consultation]').on('click', function() {
         $('.overlay, #consultation').fadeIn('slow');
@@ -78,7 +77,8 @@ $(document).ready(function() {
         });
     });
 
-    // Validation forms
+
+// Validation forms
 
     function validateForm(form) {
         $(form).validate({
@@ -111,8 +111,29 @@ $(document).ready(function() {
     validateForm('#consultation form');
     validateForm('#order form');
 
-    // Phone number
+
+// Phone number
+
     $('input[name=phone]').mask("+38 (999) 999-9999");
+
+
+// Mailer - sending data on email adress
+
+    $('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val("");
+        $('#consultation, #order').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
+
+        $('form').trigger('reset');
+    });
+    return false;
+    });
 });
 
 /* $(document).ready(function(){
