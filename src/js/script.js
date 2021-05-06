@@ -151,6 +151,11 @@ $(document).ready(function() {
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
+
+
+    // Animation
+
+    new WOW().init();
 });
 
 /* $(document).ready(function(){
