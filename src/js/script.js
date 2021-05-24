@@ -112,7 +112,7 @@ $(document).ready(function() {
     validateForm('#order form');
 
 
-// Phone number
+// Phone number - mask number
 
     $('input[name=phone]').mask("+38 (999) 999-9999");
 
